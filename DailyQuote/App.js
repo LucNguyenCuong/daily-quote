@@ -1,15 +1,10 @@
 import React from 'react';
-import {
-  View,
-  Text,
-} from 'react-native';
+import Header from './src/components/header'
 
 
 const App = () => {
   return (
-   <View>
-     <Text>Hello Mikki!</Text>
-   </View>
+    <Header />
   );
 };
 
