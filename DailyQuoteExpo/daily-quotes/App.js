@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Home from './src/components/home.js'
+import Main from './src/Main.js'
 
 export default function App() {
   return (
-    <Home />
+    <Main />
   );
 }
