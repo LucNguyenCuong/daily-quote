@@ -6,20 +6,31 @@ class Quote extends Component {
 
   constructor(props) {
     super(props)
-    this.state = {... props}
+    this.state = { ...props }
   }
 
-  componentWillMount(){
-    
+  componentWillMount() {
+
   }
 
   render() {
+    const { viewStyle, textStyle } = style;
     return (
-      <View>
-        <Text>{this.state.props.text}</Text>
+      <View style={viewStyle}>
+        <Text style={textStyle}>{this.state.props.text}</Text>
       </View>
     );
   }
+}
+
+const style = {
+  viewStyle: {
+    top: 100,
+    height: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  textStyle: {}
 }
 
 export default Quote;
